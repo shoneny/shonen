@@ -552,11 +552,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show url reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d url reject
 ^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 url reject-img
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 url reject
-# > 人人视频
-# > RRTV_屏蔽軟件更新
-^https?:\/\/api\.rr\.tv\/.*?Version url reject
-# > RRTV_屏蔽限時彈窗
-https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reject-dict
 # > 微店
 ^https?+:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
 # > 迅雷
@@ -699,8 +694,6 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 ^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 # > 什么值得买值会员权益中心banner广告
 ^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-# > 新浪新闻
-^https?+:\/\/edit\.sinaapp\.com\/ua\?t=adv url reject-200
 # > 国家地理杂志
 ^https?:\/\/dili\.bdatu\.com\/jiekou\/ad\/ url reject
 # > 国家地理
